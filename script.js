@@ -20,12 +20,19 @@ li.innerHTML = task + " (" + priority + ")" +
 document.getElementById("taskList").appendChild(li);
 
 taskInput.value = "";
+updateCount();
+}
 
+function updateCount(){
+let count = document.querySelectorAll("li").length;
+document.getElementById("taskCount").textContent = count;
 }
 
 function deleteTask(button) {
 
 button.parentElement.remove();
+
+updateCount();
 
 }
 
