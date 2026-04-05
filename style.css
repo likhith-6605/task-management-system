@@ -31,3 +31,8 @@ background: #eee;
 padding: 10px;
 list-style: none;
 }
+
+.completed{
+text-decoration: line-through;
+color: gray;
+}
