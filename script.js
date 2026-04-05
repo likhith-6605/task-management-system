@@ -1,6 +1,7 @@
 function addTask() {
 
 let taskInput = document.getElementById("taskInput");
+let priority = document.getElementById("priority").value;
 
 let task = taskInput.value;
 
@@ -11,7 +12,7 @@ return;
 
 let li = document.createElement("li");
 
-li.innerHTML = task + 
+li.innerHTML = task + " (" + priority + ")" +
 " <button onclick='completeTask(this)'>Complete</button>" +
 " <button onclick='editTask(this)'>Edit</button>" +
 " <button onclick='deleteTask(this)'>Delete</button>";
